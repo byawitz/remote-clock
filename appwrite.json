@@ -1,0 +1,37 @@
+{
+    "projectId": "remote-clock",
+    "projectName": "remote-clock",
+    "databases": [
+        {
+            "$id": "clock",
+            "name": "clock",
+            "$createdAt": "2024-04-25T23:53:35.117+00:00",
+            "$updatedAt": "2024-04-25T23:53:35.117+00:00",
+            "enabled": true
+        }
+    ],
+    "collections": [
+        {
+            "$id": "employees",
+            "$permissions": [],
+            "databaseId": "clock",
+            "name": "employees",
+            "enabled": true,
+            "documentSecurity": false,
+            "attributes": [
+                {
+                    "key": "sunday-start",
+                    "type": "integer",
+                    "status": "available",
+                    "error": "",
+                    "required": false,
+                    "array": false,
+                    "min": 0,
+                    "max": 23,
+                    "default": null
+                }
+            ],
+            "indexes": []
+        }
+    ]
+}
